@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etFname"
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:padding="5dp"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text"
+            app:helperText="Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                tools:layout_editor_absoluteX="19dp"
+                tools:layout_editor_absoluteY="112dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etLname"
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:padding="5dp"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text"
+            app:helperText="Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="200dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etMname"
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Middle Name"
+            android:padding="5dp"
+            app:helperTextEnabled="true"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etLname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="200dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etUname"
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="5dp"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text"
+            app:helperText="Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etMname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="200dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etIin"
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IIN"
+            android:padding="5dp"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text"
+            app:helperText="Required"
+            app:errorIconDrawable="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etUname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="12"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="200dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPhone"
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:prefixText="+7"
+            android:hint="Phone"
+            android:padding="5dp"
+            app:errorEnabled="true"
+            app:endIconMode="clear_text"
+            app:helperText="Required"
+            app:errorIconDrawable="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etIin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="10"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="200dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etBirthday"
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birthday"
+            android:padding="5dp"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPhone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:maxLines="1"
+                android:maxLength="10"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="200dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPassword"
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="5dp"
+            app:endIconMode="password_toggle"
+            app:errorEnabled="true"
+            app:helperText="Required"
+            app:errorIconDrawable="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etBirthday"
+            tools:layout_editor_absoluteY="643dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="200dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etConfirm"
+            style="?attr/textInputOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confrim Password"
+            android:padding="5dp"
+            app:errorEnabled="true"
+            app:endIconMode="password_toggle"
+            app:errorIconDrawable="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="200dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Submit"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etConfirm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
